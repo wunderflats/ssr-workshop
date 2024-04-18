@@ -1,17 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { renderMatches, matchRoutes, useLocation } from "react-router-dom";
+import { routes } from "./routes";
 
 const App: React.FC = () => {
-  const [count, setCount] = useState(0);
+  const location = useLocation();
 
-  return (
-    <div>
-      <h1>Hello world</h1>
-      <button onClick={() => setCount((prevState) => prevState + 1)}>
-        Click
-      </button>
-      Count: {count}
-    </div>
-  );
+  const matchedRoutes = matchRoutes(routes, location.pathname);
+
+  return renderMatches(matchedRoutes);
 };
 
 export default App;

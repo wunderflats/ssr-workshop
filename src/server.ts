@@ -5,8 +5,8 @@ const app = express();
 
 app.use("/public", express.static("dist/public"));
 
-app.get("/*", function (_req, res) {
-  return res.status(200).send(renderer());
+app.get("/*", function (req, res) {
+  return res.status(200).send(renderer(req));
 });
 
 app.listen(6900, () => {

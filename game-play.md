@@ -1,7 +1,7 @@
 - Create a simple SSR express app - DONE
 - Create a simple SSR React app with express - DONE
-- Add Client side rehydration + rendering
-- Add routing (Single page navigation)
+- Add Client side rehydration + rendering - DONE
+- Add routing (Single page navigation) - DONE
 - Add ability to make requests between the server and the client
   - Why does the browser send login request to the frontend server while this makes the request to backend ?
   - Why does every page need a getData function ?
