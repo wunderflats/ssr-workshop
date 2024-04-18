@@ -1,5 +1,5 @@
 - Create a simple SSR express app - DONE
-- Create a simple SSR React app with express
+- Create a simple SSR React app with express - DONE
 - Add Client side rehydration + rendering
 - Add routing (Single page navigation)
 - Add ability to make requests between the server and the client
